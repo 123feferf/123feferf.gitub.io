@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Philosopher</title><meta name="keywords" content="关键字"><meta name="author" content="Benjamin"><meta name="copyright" content="Benjamin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="那些杀不死你的，终将使你变得更强大。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Philosopher">
+<meta property="og:url" content="https://123feferf.gitub.io/index.html">
+<meta property="og:site_name" content="Philosopher">
+<meta property="og:description" content="那些杀不死你的，终将使你变得更强大。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://123feferf.gitub.io/media/avatar.jpg">
+<meta property="article:author" content="Benjamin">
+<meta property="article:tag" content="关键字">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://123feferf.gitub.io/media/avatar.jpg"><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="https://123feferf.gitub.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Philosopher',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-01-30 13:21:21'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/media/bg.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Philosopher</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Philosopher</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="mailto:你的邮箱" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/%E9%BB%91%E6%A0%BC%E5%B0%94/" title="黑格尔">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="黑格尔"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/%E9%BB%91%E6%A0%BC%E5%B0%94/" title="黑格尔">黑格尔</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T05:10:05.000Z" title="发表于 2022-01-30 13:10:05">2022-01-30</time></span></div><div class="content">　　1、太阳下面没有新事物。
+　　2、人类是地球上的匆匆来客。
+　　3、只有永远躺在泥坑里的人，才不会再掉进坑里。
+　　4、假如没有热情，世界上任何伟大的事业都不会成功。
+　　5、一个深刻的灵魂，即使痛苦，也是美的出处。
+　　6、在纯粹光明中就像在纯粹黑暗中一样，看不清什么东西。
+　　7、方法是任何事物所不能抗拒的最高的
+　　8、历史常常惊人地重演。
+　　9、纪律是自由的第1条件。
+　　10、精神上的道德力量发挥了它的潜能，举起了它的旗帜，于是咱们的爱国热情和正义感在现实中均得施展其威力和作用。
+　　11、良心，它就是对它自我有了确信的精神。
+　　12、真理是在漫长地发展着的认识过程在被掌握的，在这一过程在，每一步的直接继续。
+　　13、目标有价值，生活才有价值。
+　　14、一个深刻的灵魂，即使痛苦，也是美的。
+　　15、上帝惊叹细节。
+　　16、世上不是缺少美，而是缺少发现美。
+　　17、密涅瓦的猫头鹰在黄昏起飞。
+　　18、与所爱的人长期相处的秘诀是：放下改变对象的念头。
+　　19、绝对的光明，如同绝对的黑暗。
+　　20、熟知并非真知。
+　　21、方法不是外在的形式，而是内容的灵魂 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/blog/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95/" title="苏格拉底">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="苏格拉底"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95/" title="苏格拉底">苏格拉底</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T04:37:35.000Z" title="发表于 2022-01-30 12:37:35">2022-01-30</time></span></div><div class="content">  　1、无知即罪恶。
+　　2、如果把世上每一个人的痛苦放在一起，再让你去选择，你可能还是愿意选择自己原来的那一份。
+　　3、人可以犯错，但是不可犯同一个错。
+　　4、谦逊是藏于土中甜美的根，所有崇高的美德由此发芽滋长。
+　　5、真正高明的人，就是能够借助别人的智慧，来使自己不受蒙蔽的人。
+　　6、不懂得工作真义的人，视工作为苦役。
+　　7、我们的需要越是少，我们越近似神。
+　　8、我与世界相遇，我自与世界相蚀，我自不辱使命，使我与众生相聚。
+　　9、神灵为自己保留了那对于最为重要的东西的认识。
+　　10、我不是给人知识，而是使知识自己产生的产婆。
+　　11、每个人身上都有太阳，主要是如何让它发光。
+　　12、知足是天赋的财富，奢侈是人为的贫穷。
+　　13、想起来，我还欠某人一只雄鸡未还。
+　　14、我到处走动，没有做别的，只是要求你们，不分老少，不要只顾你们的肉体，而要保护你们的灵魂。
+　　15、这个世界上有两种人，一种是快乐的猪，一种是痛苦的人。做痛苦的人，不做快乐的猪。
+　　16、最有效的教育方法不是告诉人们答案，而是向他们提问。
+　　17、告诉我你的朋友，我就知道你是什么样的人 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/%E8%80%B6%E7%A8%A3/" title="耶稣">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="耶稣"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/%E8%80%B6%E7%A8%A3/" title="耶稣">耶稣</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T04:33:28.000Z" title="发表于 2022-01-30 12:33:28">2022-01-30</time></span></div><div class="content">　　1、神爱世人，甚至将他的独生子赐给他们，叫一切信他的，不致灭亡，反得永生。　　　　2、你们祈求，就给你们；寻找，就寻见；叩门，就给你们开门。因为凡祈求的，就得着；寻找的，就寻见；叩门的，就给他开门。　　　　3、要爱你们的仇敌，为那逼迫你们的祷告。这样，就可以作你们天父的儿子。因为他叫日头照好人，也照歹人；降雨给义人，也给不义的人。　　　　4、我是世界的光。跟从我的，就不在黑暗里行走，必要得着生命的光。　　　　5、我来了，是要叫羊得生命，并且得的更丰盛。　　　　6、我心里柔和谦卑，你们当负我的轭，学我的样式，这样，你们心里就必得享安息。　　　　7、我就是道路、真理、生命，若不藉著我，没有人能到父那里去。你们若认识我，也就认识我的父。从今以后，你们认识他，并且已经看见他。　　　　8、我将这些事告诉你们，是要叫你们在我里面有平安。在世上你们有苦难，但你们可以放心，我已经胜了世界。　　　　9、你们是世上的盐。盐若失了味，怎能叫它再咸呢？以后无用，不过丢在外边，被人践踏了。你们是世上的光。城造在山上，是不能隐藏的。人点灯，不放在斗底下，是放在灯台上，就照亮一家的人。你们的光也当这样照在人前， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/blog/%E5%8F%94%E6%9C%AC%E5%8D%8E/" title="叔本华">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="叔本华"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/%E5%8F%94%E6%9C%AC%E5%8D%8E/" title="叔本华">叔本华</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T04:10:08.000Z" title="发表于 2022-01-30 12:10:08">2022-01-30</time></span></div><div class="content">　　1、时间是无限的，人的生命是有限的，人为了用有限的时间去抗衡无限的时间而采取了繁殖这一手段，让自己的生命时间得以延续。这是人类繁殖的本能。　　　　2、人类幸福的两大敌人是痛苦和无聊。　　　　3、没有人生活在过去，也没有人生活在未来，现在是生命确实占有的唯一形态。　　　　4、平庸的人关心怎样耗费时间，有才能的人竭力利用时间。　　　　5、庸人费心将是消磨时光，能人费尽心机利用时光。　　　　6、普通人只想到如何度过时间，有才能的人设法利用时间。　　　　7、单个的人是软弱无力的，就像漂流的鲁滨孙一样，只有同别人在一起，他才能完成许多事业。　　　　8、老年时最大的安慰莫过于意识到，已把全部青春的力量都献给了永不衰老的事业。　　　　9、读书越多，留存在脑中的东西越少，两者适成反比。读书多，他的脑海就像一块密密麻麻重重叠叠涂抹的黑板一样。　　　　10、一种纯粹靠读书学来的真理，与我们的关系，就像假肢、假牙、蜡鼻子甚或人工植皮。而由独立思考获得的真理就如我们天生的四肢：只有它们才属于我们。　　　　11、生命是一种语言，它为我们转达了某种真理；如果以另一种方式学习它，我们将不能生存。　　　　12、我 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/%E5%B0%BC%E9%87%87/" title="尼采">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="尼采"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/%E5%B0%BC%E9%87%87/" title="尼采">尼采</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T04:09:50.000Z" title="发表于 2022-01-30 12:09:50">2022-01-30</time></span></div><div class="content">　　1、当你凝视深渊的时候，深渊也在凝视你。
+　　2、更高级的哲人独处着，这并不是因为他想孤独，而是因为在他的周围找不到他的同类。
+　　3、我是太阳！
+　　4、那些没能杀死我的，使我变得更坚强！
+　　5、受苦的人，没有悲观的权利。一个受苦的人，如果悲观了，就没有了面对现实的勇气，没有了与苦难抗争的力量，结果是他将受到更大的苦。
+　　6、“他沉沦，他跌倒。”你们一再嘲笑，须知，他跌倒在高于你们的上方。他乐极生悲，可他的强光紧接你们的黑暗。
+　　8、人要么永不做梦，要么梦得有趣；人也必须学会清醒：要么永不清醒，要么清醒得有趣。
+　　9、当心！他一沉思，就立即准备好了一个谎言。
+　　10、充耳不闻的智慧。—-如果我们整天满耳朵都是别人对我们的议论，如果我们甚至去推测别人心里对于我们的想法，那么，即使最坚强的人也将不能幸免于难！因为其他人，只有在他们强于我们的情况下，才能容许我们在他们身边生活；如果我们超过了他们，如果我们哪怕仅仅是想要超过他们，他们就会不能容忍我们！总之，让我们以一种难得糊涂的精神和他们相处，对于他们关于我们的所有议论，赞扬，谴责，希望和期待都充耳不闻，连想也不去想。
+　　1 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Benjamin</div><div class="author-info__description">那些杀不死你的，终将使你变得更强大。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/guguliu"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:你的邮箱" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/%E9%BB%91%E6%A0%BC%E5%B0%94/" title="黑格尔"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="黑格尔"/></a><div class="content"><a class="title" href="/blog/%E9%BB%91%E6%A0%BC%E5%B0%94/" title="黑格尔">黑格尔</a><time datetime="2022-01-30T05:10:05.000Z" title="发表于 2022-01-30 13:10:05">2022-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95/" title="苏格拉底"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="苏格拉底"/></a><div class="content"><a class="title" href="/blog/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95/" title="苏格拉底">苏格拉底</a><time datetime="2022-01-30T04:37:35.000Z" title="发表于 2022-01-30 12:37:35">2022-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E8%80%B6%E7%A8%A3/" title="耶稣"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="耶稣"/></a><div class="content"><a class="title" href="/blog/%E8%80%B6%E7%A8%A3/" title="耶稣">耶稣</a><time datetime="2022-01-30T04:33:28.000Z" title="发表于 2022-01-30 12:33:28">2022-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E5%8F%94%E6%9C%AC%E5%8D%8E/" title="叔本华"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="叔本华"/></a><div class="content"><a class="title" href="/blog/%E5%8F%94%E6%9C%AC%E5%8D%8E/" title="叔本华">叔本华</a><time datetime="2022-01-30T04:10:08.000Z" title="发表于 2022-01-30 12:10:08">2022-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E5%B0%BC%E9%87%87/" title="尼采"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="尼采"/></a><div class="content"><a class="title" href="/blog/%E5%B0%BC%E9%87%87/" title="尼采">尼采</a><time datetime="2022-01-30T04:09:50.000Z" title="发表于 2022-01-30 12:09:50">2022-01-30</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">一月 2022</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-09-09T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">10.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-30T05:21:21.730Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Benjamin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "知识来自实践。,Knowledge comes from experience alone.,世间无所谓天才，它仅是刻苦加勤奋。,There is no such thing as genius; it is nothing but labour and diligence.".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '知识来自实践。'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><div class="aplayer no-destroy" data-id="7675104902" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/wanko.model.json"},"display":{"position":"left","width":100,"height":150,"hOffset":-10,"vOffset":40},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
